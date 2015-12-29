@@ -38,6 +38,7 @@ gem "font-awesome-rails"
 gem 'owlcarousel-rails'
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
+gem "passenger"
 
 
 group :development, :test do
