@@ -1,0 +1,131 @@
+<div id="nav_index">
+	<%= render("layouts/navigation") %>
+</div>
+
+<div class="full_width">
+	<%= image_tag("MicchkaBellisuLogo.jpg", class: "large_logo") %>
+	<ul>
+		<li><%= link_to("Home", root_path, class: "banner_link_home") %></li>
+		<li><%= link_to("Books", books_index_path, class: "banner_link_books") %></li>
+		<li><%= link_to("Games", games_index_path, class: "banner_link_games") %></li>
+	</ul>
+
+	<%= image_tag("CouvertureHead1.png", class: "heads head1", id: "head1") %>
+	<%= image_tag("CouvertureHead2.png", class: "heads head2", id: "head2") %>
+	<%= image_tag("CouvertureHead3.png", class: "heads head3", id: "head3") %>
+	<%= image_tag("CouvertureHead4.png", class: "heads head4", id: "head4") %>
+	<%= image_tag("LetterA.png", class: "letters letter1", id: "head1") %>
+	<%= image_tag("LetterB.png", class: "letters letter2", id: "head2") %>
+	<%= image_tag("LetterC.png", class: "letters letter3", id: "head3") %>
+	<%= image_tag("LetterD.png", class: "letters letter4", id: "head4") %>
+	<%= image_tag("Object1.png", class: "objects object1", id: "head1") %>
+	<%= image_tag("Object2.png", class: "objects object2", id: "head2") %>
+	<%= image_tag("Object3.png", class: "objects object3", id: "head3") %>
+	<%= image_tag("Object4.png", class: "objects object4", id: "head4") %>
+	<%= image_tag("Number1.png", class: "numbers number1", id: "head1") %>
+	<%= image_tag("Number2.png", class: "numbers number2", id: "head2") %>
+	<%= image_tag("Number3.png", class: "numbers number3", id: "head3") %>
+	<%= image_tag("Number4.png", class: "numbers number4", id: "head4") %>
+</div>
+<%= image_tag("Welcome.png", class: "welcome_header") %>
+<div id="book_home" class="center">
+	<div class="container">
+		<div class="row">
+			<%= image_tag("ChildrensBookTitle.png", class: "title_pic") %>
+		</div>
+	</div>
+	<div class="owl-carousel book_carousel">
+		<div><%= link_to(image_tag("HaileyBookCover.jpg", class: "book_cover"), books_hailey_book_path) %></div>
+		<div class="center book_description"><%= link_to("<h1>Hailey Adventure</h1><p>This is the amazing story of Hailey in Paris</p>".html_safe, books_hailey_book_path ) %></div>
+		<div><%= link_to(image_tag("Hailey.png", class: "book_character"), books_hailey_book_path) %></div>
+		<div><%= link_to(image_tag("IsabellaBookCover.jpg", class: "book_cover"), books_isabella_book_path) %></div>
+		<div class="center book_description"><%= link_to("<h1>Isabella Adventure</h1><p>This is the amazing story of Hailey in Spain</p>".html_safe, books_isabella_book_path ) %></div>
+		<div><%= link_to(image_tag("Isabella.png", class: "book_character", id: "isabella"), books_isabella_book_path) %></div>
+		<div><%= link_to(image_tag("RobotBookCover.jpg", class: "book_cover"), books_robot_book_path) %></div>
+		<div class="center book_description"><%= link_to("<h1>Robot Adventure</h1><p>This is the amazing story of a robot</p>".html_safe, books_robot_book_path ) %></div>
+		<div><%= link_to(image_tag("Robot.png", class: "book_character", id: "isabella"), books_robot_book_path) %></div>
+	</div>
+	<div class="container">
+		<div class="row marginTop">
+			<div class="col-md-6">
+				<h3> blblblblb</h3>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<h3> blblblblb</h3>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="game_home" class="center">
+	<div class="container">
+		<div class="row">
+			<%= image_tag("GamesTitle.png", class: "title_pic") %>
+		</div>
+	</div>
+	<div class="owl-carousel game_carousel">
+		<div><%= image_tag("HaileyBookCover.jpg", class: "book_cover") %></div>
+		<div class="center book_description"><h1>Hailey Adventure</h1><p>This is the amazing story of Hailey in Paris</p></div>
+		<div><%= image_tag("Hailey.png", class: "book_character") %></div>
+		<div><%= image_tag("IsabellaBookCover.jpg", class: "book_cover") %></div>
+		<div class="center book_description"><h1>Isabella Adventure</h1><p>This is the amazing story of Hailey in Spain</p></div>
+		<div><%= image_tag("Isabella.png", class: "book_character", id: "isabella") %></div>
+		<div><%= image_tag("RobotBookCover.jpg", class: "book_cover") %></div>
+		<div class="center book_description"><h1>Robot Adventure</h1><p>This is the amazing story of a robot</p></div>
+		<div><%= image_tag("Robot.png", class: "book_character", id: "isabella") %></div>
+	</div>
+	<div class="container">
+		<div class="row marginTop">
+			<div class="col-md-6">
+				<h3> blblblblb</h3>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<h3> blblblblb</h3>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+				<p> blalbakjsflajsfdfkldjafsldkjflkasjdflajsdlfjasdfs
+					jsdkfjlasdjfasjdfasdfasldfjalsdkjfalsdkjfasldfjas
+					jsdfklasjdlfajsfdl.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="background_news">
+	<div class="container">
+		<div class="row">
+			<%= image_tag("NewsTitle.png", class: "title_pic") %>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+

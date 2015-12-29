@@ -1,0 +1,2 @@
+class SevenDifferencesController < ApplicationController
+end

@@ -1,0 +1,31 @@
+<div class="background_memo">
+	<div class="container">
+		<div class="marginTopMax"></div>
+		<!--div class="row center">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="score_board">
+					<p>Score : <span id="memo_score">0</span></p>
+				</div>
+			</div>
+		</div-->
+
+		<div class="row anchor_memo anchor">
+			<% @memories.each do |memo| %>
+				<div class="col-md-3 memo_div <%= 'hidden' if memo.title == 'Memo Back' %>">
+					<div class="flipper">
+						<div class="card cardette" id="<%= memo.title %>"> 
+		  					<div class="front face"> 
+								<%= image_tag(@memo_back.card.url(:medium), class: "memory_cards_pic", alt: "Memo Cards Back") %>
+							</div>
+							<div class="back face">
+								<%= image_tag(memo.card.url(:medium), class: "memory_cards_pic", alt: "Memo Cards") %>
+							</div>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+		<%= render("shared/bravo_win") %>
+		<div class="marginTopMax"></div>
+	</div>	
+</div>

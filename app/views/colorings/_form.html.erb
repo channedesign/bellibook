@@ -1,0 +1,14 @@
+<div class="marginTopMax"></div>
+<div class="row">
+    <div class="well col-md-8 col-md-offset-2">
+        <%= form_for(@coloring, html: {multipart: true}) do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+        
+        <span class="picture">
+            <%= f.file_field :coloring, accept: "image/jpeg, image/gif, image/png" %>
+        </span>
+        <%= f.submit(@coloring.new_record? ? "Add coloring" : "Delete coloring", class: "btn btn-success") %>
+        <% end %>
+    </div>
+</div>

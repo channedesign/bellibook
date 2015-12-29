@@ -1,0 +1,21 @@
+<div class="index_game_container">
+	<div class="container">
+		<div class="marginTopMax"></div>
+		<div class="row center">
+			<div class="col-md-6">
+				<%= image_tag("MemoryGameTitle.png", class: "title_pic") %>
+				<%= link_to(image_tag("VisualMemoGame.png", alt: "Memo Game", class: "visual"), memory_cards_path) %>
+			</div>
+			<div class="col-md-6">
+				<%= image_tag("SpotTheDiffrenceTitle.png", class: "title_pic") %>
+				<%= link_to(image_tag("VisualSpotTheDifference.png", alt: "Spot the Difference Game", class: "visual"), seven_differences_index_path) %>
+			</div>
+			<div class="col-md-6 col-md-offset-3">
+				<%= image_tag("ColoringTitle.png", class: "title_pic") %>
+				<%= link_to(image_tag("VisualColoring.png", alt: "Coloring", class: "visual"), colorings_path) %>
+			</div>
+
+		</div>
+		<div class="marginTopMax"></div>
+	</div>
+</div>
